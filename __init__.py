@@ -9,7 +9,7 @@ DB_NAME = "database.db"
 #App wird kreiert mit SecretKey (Definition für Main)
 def create_app():
     app = Flask(__name__)
-    app.config["SECRET_KEY"] = "Ronja"
+    app.config["SECRET_KEY"] = 
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{DB_NAME}"
     db.init_app(app)
 
